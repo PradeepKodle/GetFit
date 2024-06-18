@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Player</title>
+    <!-- Link to your CSS file -->
+    <style>/* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         
+        }
+
+        
+        /* Video container styles */
+        .videos-container {
+           
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .video {
+            margin: 100px; /* Add some spacing between videos */
+            margin-left: 120px;
+        }
+        
+        .video iframe {
+            width: 400px; /* Adjust the width of the videos as needed */
+            height: 200px; /* Adjust the height of the videos as needed */
+            border-radius: 20px;
+        }
+        header{    background-image:url(1244846.jpg);
+        height: 20vh}
+       .hh{text-align: center;
+                padding-top: 50px;
+            font-size: 50px;
+            font-style: italic,bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif }
+            .hhh{text-align: center}
+            body{background-color: black;}
+            .home-button{ position: absolute;
+                top: 150px; /* Adjust this value as needed to position the button */
+                right: 90px;
+            height: 25px;
+            width: 50px;
+            background-color: black;
+            border-radius: 5px;
+            color: white;}
+
+        </style>
+</head>
+<body><header><p class="hh">Empower</p> <button class="home-button"onclick="goToNextPage()" >Home</button></header>
+
+<div class="container">
+    <h1 style="text-align: center;">YouTube Video Suggestions</h1>
+    
+    <div class="videos-container">
+        <!-- Replace 'VIDEO_ID' with the actual ID of the YouTube videos -->
+        <div class="video">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/OcPs3x1vX1A" frameborder="0" allowfullscreen></iframe>
+            <h3 class="hhh">Warmup Excercise</h3>
+        </div>
+    
+        
+        <!-- Repeat the above div for each video -->
+        <!-- Example: -->
+        <div class="video">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/7IaxiUOziVs" frameborder="0" allowfullscreen></iframe>
+            <h3 class="hhh">Triceps Excercise</h3>
+        </div>
+        
+    
+        <div class="video">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/DpIeBMgh2OA" frameborder="0" allowfullscreen></iframe>
+       
+            <h3 class="hhh">legs Excercise</h3>
+        </div>
+
+        <div class="video">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/20-YGOXNs30" frameborder="0" allowfullscreen></iframe>
+            <h3 class="hhh">Biseps Excercise</h3>
+        </div>
+      
+        <div class="video">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/riQuNlBzRsA" frameborder="0" allowfullscreen></iframe>
+            <h3 class="hhh">Abs Excercise</h3>
+        </div>
+        
+        <div class="video">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/H1z3Gzf2TG8" frameborder="0" allowfullscreen></iframe>
+            <h3 class="hhh">Forearm Excercise</h3>
+        </div>
+    
+        <div class="video">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/G5JVg3WEZmM" frameborder="0" allowfullscreen></iframe>
+            <h3 class="hhh">Legs Excercise</h3>
+        </div>
+        
+       
+    </div>
+</div>
+<script>
+    function goToNextPage() {
+        
+        window.location.href = "next-page.html"; 
+    }
+</script>
+
+</body>
+</html>

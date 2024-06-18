@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main" class="login-container">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="submit" onclick="goToNextPage()">Login</button>
+            <button id="sign-up">Sign Up</button>
+            <button id="forgot-password">Forgot Password?</button>
+            <p id="error-message"></p>
+        </div>
+
+        <div id="create-acct" class="signup-container" style="display: none;">
+            <h2>Create Account</h2>
+            <input type="email" id="email-signup" placeholder="Email">
+            <input type="email" id="confirm-email-signup" placeholder="Confirm Email">
+            <input type="password" id="password-signup" placeholder="Password">
+            <input type="password" id="confirm-password-signup" placeholder="Confirm Password">
+            <button id="create-acct-btn">Create Account</button>
+            <button id="return-btn">Return to Login</button>
+            <p id="signup-error-message"></p>
+        </div>
+    </div>
+
+    <!-- Add Firebase SDKs -->
+    <script>
+        document.getElementById('sign-up').onclick = function() {
+            document.getElementById('main').style.display = 'none';
+            document.getElementById('create-acct').style.display = 'block';
+        };
+
+        document.getElementById('return-btn').onclick = function() {
+            document.getElementById('create-acct').style.display = 'none';
+            document.getElementById('main').style.display = 'block';
+        };
+
+        document.getElementById('chatbotButton').onclick = function() {
+            window.location.href = 'http://localhost:8501/';  // Replace with your Streamlit app URL
+
+            
+        };
+
+        function goToNextPage() {
+        
+        window.location.href = "index.html  "; 
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
